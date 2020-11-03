@@ -12,6 +12,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         layout.pipeExample.setOnClickListener {
             startActivity(Intent(this, PipeExampleActivity::class.java))
         }
+
+        layout.looperExample.setOnClickListener {
+            startActivity(Intent(this, LooperActivity::class.java))
+        }
     }
 
     override fun getLayoutId(): Int = R.layout.activity_main
